@@ -1,0 +1,42 @@
+
+
+inicializamos el repositorio
+#git init
+
+// se agrega la pripiedad start al objeto script en el archivo package-json para que heroku sepa 
+// que comando ejecutar para montar el server
+// "start": "node server.js",
+
+
+//Para reconocer el puerto por el cual esta escuchando el servidor
+//si no esta ejecuanto el proceso se le asigna el puerto 3000
+const port = process.env.PORT || 3000;
+
+
+
+INdentificamos con las cfredenciales de herokku
+#heroku login
+
+
+
+Agregamos el repositorio heroku remoto
+#heroku git|remote -a "nombre_app"
+
+
+Hacemos el commit a nuestro repositorio local.
+# git add .
+# git commmit -m "primer commit"
+
+Subimos el repositorio a Heroku
+#git push heroku master 
+
+comenzara a subir, detectara el lenguaje e instalara los packege de node 
+
+Abrimos la app
+
+#heroku open
+
+
+
+
+
